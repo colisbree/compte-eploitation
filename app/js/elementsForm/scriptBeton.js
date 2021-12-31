@@ -53,6 +53,7 @@ function addLineBeton() {
    let div = document.getElementById('formBeton' + be);
    let addCode = `<tr id="formBeton` + be + `">
             <th scope="row" id="LigneBeton` + be + `" class="align-middle">` + be + `</th>
+            <input type="hidden" name="ligneBeton` + be + `" value="ligne">
             <td>
                <input type="text" name="volume` + be + `" class="form-control form-control-sm text-end" value=""
                   onchange="calculBeton(` + be + `)" >

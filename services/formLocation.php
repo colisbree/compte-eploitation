@@ -3,7 +3,7 @@
             <caption class="bg-light-marron">LOCATION ENGINS / MATERIELS</caption>
             <thead>
                <tr>
-                  <th scope="col"></th>
+                  <th scope="col"><input type="hidden" name="Location" value="categorie"></th>
                   <th scope="col" class="col-md-2 text-center align-middle">Loueur</th>
                   <th scope="col" class="col-md-2 text-center align-middle">Location/Matériel</th>
                   <th scope="col" class="col-md-1 text-center align-middle">Coût € HT</th>
@@ -15,6 +15,7 @@
             <tbody>
                <tr id="formLocation1">
                   <th scope="row" id="LigneLocation1" class="align-middle">1</th>
+                  <input type="hidden" name="LigneLocation1" value="ligne">
                   <td>
                      <input type="text" name="loueurLocation1" value=""  class="form-control form-control-sm text-end">
                   </td>

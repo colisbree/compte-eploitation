@@ -1,3 +1,7 @@
+// calcul post soumission du formulaire
+calculTotalItem(i, "pRevientHT", "pTotauxFournisseurs");
+
+// calcul avant soumission du formulaire
 function calculTotalItem(i, nomItem, nomTotal) {
    let cumul = 0;
    let prixItem = 0;

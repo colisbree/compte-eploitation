@@ -54,6 +54,7 @@ function addLineEvac() {
    let div = document.getElementById('formEvac' + edd);
    let addCode = `<tr id="formEvac` + edd + `">
             <th scope="row" id="LigneEvac` + edd + `" class="align-middle">` + edd + `</th>
+            <input type="hidden" name="LigneEvac` + edd + `" value="ligne">
             <td>
                <input type="text" name="volumeEvac` + edd + `" class="form-control form-control-sm text-end" value=""
                   min="0" onchange="calculEvac(` + edd + `)" >

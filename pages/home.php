@@ -1,15 +1,33 @@
 <?php
 // récupération de la soumission du formulaire
-if (isset($_POST)){
-   
+if (!empty($_POST)){
+   //var_dump($_POST);
+   $numCategorie = 0;
+   $lignes = 0;
+   $nomCategorie1 = $nomCategorie2 = "";
+   $nbLignes[]=0;
+   $formSoumis=1;
    foreach($_POST as $key => $value)
    {
       $key = htmlentities(stripslashes(trim($key)));
       $value = htmlentities(stripslashes(trim($value)));
       $datas[$key] = $value;
+
+      if($value==="categorie"){
+         ++$numCategorie;
+         $nomCategorie1 = $key;
+         $lignes = 0;
+         //echo $key.'<br/>';
+      }
+      if($value==="ligne" && $nomCategorie1 === $nomCategorie2){
+         ++$lignes;
+         //echo $lignes.'<br/>';
+      }
+      $nomCategorie2 = $nomCategorie1;
+      $nbLignes[$numCategorie]=$lignes;
    }
    // echo '<pre>';
-   // var_dump($datas);
+   // var_dump($nbLignes);
    // echo '</pre>';
 }
 ?>

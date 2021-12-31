@@ -2,7 +2,7 @@
    <caption class="bg-light-yellow">SOUS-TRAITANCE</caption>
    <thead>
       <tr>
-         <th scope="col"></th>
+         <th scope="col"><input type="hidden" name="Ss-Traitant" value="categorie"></th>
          <th scope="col" class="col-md-2 text-center align-middle">Sous-Traitant</th>
          <th scope="col" class="col-md-1 text-center align-middle">Nb Pers</th>
          <th scope="col" class="col-md-2 text-center align-middle">Nb Heures</th>
@@ -15,6 +15,7 @@
    <tbody>
       <tr id="formSt1">
          <th scope="row" id="ligneSt1" class="align-middle">1</th>
+         <input type="hidden" name="ligneSt1" value="ligne">
          <td>
             <input type="text" name="sStraitantSt1" class="form-control form-control-sm" value="">
          </td>

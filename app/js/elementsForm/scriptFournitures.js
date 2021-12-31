@@ -1,7 +1,15 @@
-let i = 1;
 
+if (formSoumis === 1) {
+   for (let n = 1; n <= i; n++) {
+      calculPrix(n, 1);
+   }
+   if (i > 1) {
+      document.getElementById('btnFournisseurMinus').disabled = false;
+   }
+}
 
-function calculPrix(j) {
+function calculPrix(j, soumis = 0) {
+
    let quantite = parseFloat(document.getElementById("formulaire").elements["quantite" + j].value);
    let prixUnitaireHT = parseFloat(document.getElementById("formulaire").elements["prixUnitaireHT" + j].value);
    let pTransportHT = parseFloat(document.getElementById("formulaire").elements["pTransportHT" + j].value);
@@ -19,7 +27,9 @@ function calculPrix(j) {
       alert("Erreur de saisie. Veuillez recommencer.");
 
    }
-   calculTotalItem(i, "pRevientHT", "pTotauxFournisseurs");
+   if (soumis === 0) {
+      calculTotalItem(i, "pRevientHT", "pTotauxFournisseurs");
+   }
 }
 
 // function calculTotalFournitures() {
@@ -56,6 +66,7 @@ function addLineFournisseur() {
    let div = document.getElementById('form' + i);
    let addCode = `<tr id="formFournisseur` + i + `">
             <th scope="row" id="ligneFrs`+ i + `" class="align-middle">` + i + `</th>
+            <input type="hidden" name="ligneFrs`+ i + `" value="ligne">
             <td>
                <input type="text" name="fournisseur`+ i + `" class="form-control form-control-sm text-end" value="">
                </td>

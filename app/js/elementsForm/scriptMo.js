@@ -54,6 +54,7 @@ function addLineMo() {
    let div = document.getElementById('formMo' + mo);
    let addCode = `<tr id="formMo` + mo + `">
             <th scope="row" id="ligneMo` + mo + `" class="align-middle">` + mo + `</th>
+            <input type="hidden" name="ligneMo` + mo + `" value="ligne">
             <td>
                <input type="number" name="nbPers` + mo + `" class="form-control form-control-sm text-end" value="1" min="1"
                 onchange="calculMo(` + mo + `)" >

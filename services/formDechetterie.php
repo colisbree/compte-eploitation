@@ -3,7 +3,7 @@
             <caption class="bg-grey">EVACUATION DECHARGES / DECHETTERIES</caption>
             <thead>
                <tr>
-                  <th scope="col"></th>
+                  <th scope="col"><input type="hidden" name="Dechetterie" value="categorie"></th>
                   <th scope="col" class="col-md-1 text-center align-middle">Volume m3</th>
                   <th scope="col" class="col-md-1 text-center align-middle">PU €HT/m3</th>
                   <th scope="col" class="col-md-5 text-center align-middle">Nature des travaux</th>
@@ -15,6 +15,7 @@
             <tbody>
                <tr id="formEvac1">
                   <th scope="row" id="LigneEvac1" class="align-middle">1</th>
+                  <input type="hidden" name="LigneEvac1" value="ligne">
                   <td>
                      <input type="text" name="volumeEvac1" value="" min="0" onchange="calculEvac(1)" class="form-control form-control-sm text-end" >
                   </td>

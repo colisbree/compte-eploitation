@@ -53,6 +53,7 @@ function addLineEngin() {
    let div = document.getElementById('formEngin' + eem);
    let addCode = `<tr id="formEngin` + eem + `">
             <th scope="row" id="LigneEngin` + eem + `" class="align-middle">` + eem + `</th>
+            <input type="hidden" name="LigneEngin` + eem + `" value="ligne">
             <td>
                <input type="text" list="liste-engins" id="list_input` + eem + `" name="typeEngin` + eem + `"
                   class="form-control form-control-sm text-end" value="" onchange="selectEngin(` + eem + `)" >

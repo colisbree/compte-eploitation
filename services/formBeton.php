@@ -3,7 +3,7 @@
 				<caption class="bg-marron">BETON</caption>
 				<thead>
 					<tr>
-						<th scope="col"></th>
+						<th scope="col"><input type="hidden" name="Beton" value="categorie"></th>
 						<th scope="col" class="col-md-1 text-center align-middle">Volume m3</th>
 						<th scope="col" class="col-md-2 text-center align-middle">Centrale ?</th>
 						<th scope="col" class="col-md-4 text-center align-middle">Nature des travaux</th>
@@ -15,6 +15,7 @@
 				<tbody>
 					<tr id="formBeton1">
 						<th scope="row" id="LigneBeton1" class="align-middle">1</th>
+						<input type="hidden" name="ligneBeton1" value="ligne">
 						<td>
 							<input type="text" name="volume1" value="" onchange="calculBeton(1)" class="form-control form-control-sm text-end" >
 						</td>

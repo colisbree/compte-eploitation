@@ -52,6 +52,7 @@ function addLineLocation() {
    let div = document.getElementById('formLocation' + loc);
    let addCode = `<tr id="formLocation` + loc + `">
             <th scope="row" id="LigneLocation` + loc + `" class="align-middle">` + loc + `</th>
+            <input type="hidden" name="LigneLocation` + loc + `" value="ligne">
             <td>
                <input type="text" name="loueurLocation` + loc + `" class="form-control form-control-sm text-end" value="">
             </td>

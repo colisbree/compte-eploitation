@@ -3,7 +3,7 @@
             <caption class="bg-olive">EMPLOI ENGINS / MATERIELS WAROT</caption>
             <thead>
                <tr>
-                  <th scope="col"></th>
+                  <th scope="col"><input type="hidden" name="Materiel" value="categorie"></th>
                   <th scope="col" class="col-md-2 text-center align-middle text-warning bg-dark">Engin/Matériel</th>
                   <th scope="col" class="col-md-1 text-center align-middle">Nb heures</th>
                   <th scope="col" class="col-md-1 text-center align-middle">Ct horaire</th>
@@ -15,6 +15,7 @@
             <tbody>
                <tr id="formEngin1">
                   <th scope="row" id="LigneEngin1" class="align-middle">1</th>
+                  <input type="hidden" name="LigneEngin1" value="ligne">
                   <td>
                      <input type="text" list="liste-engins" id="list_input1" name="typeEngin1"
                         class="form-control form-control-sm text-end" value="" onchange="selectEngin(1)" >

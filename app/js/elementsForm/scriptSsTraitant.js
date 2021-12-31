@@ -54,6 +54,7 @@ function addLineSt() {
    let div = document.getElementById('formSt' + st);
    let addCode = `<tr id="formSt` + st + `">
             <th scope="row" id="ligneSt` + st + `" class="align-middle">` + st + `</th>
+            <input type="hidden" name="ligneSt` + st + `" value="ligne">
             <td>
                <input type="text" name="sStraitantSt` + st + `" class="form-control form-control-sm" value="">
             </td>

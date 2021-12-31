@@ -2,7 +2,7 @@
    <caption class="bg-light-blue">MAIN D'OEUVRE</caption>
    <thead>
       <tr>
-         <th scope="col"></th>
+         <th scope="col"><input type="hidden" name="Main-Oeuvre" value="categorie"></th>
          <th scope="col" class="col-md-1 text-center align-middle">Nb Pers</th>
          <th scope="col" class="col-md-2 text-center align-middle">Nb Heures</th>
          <th scope="col" class="col-md-4 text-center align-middle">Nature des travaux</th>
@@ -14,6 +14,7 @@
    <tbody>
       <tr id="formMo1">
          <th scope="row" id="ligneMo1" class="align-middle">1</th>
+         <input type="hidden" name="ligneMo1" value="ligne">
          <td>
             <input type="number" name="nbPers1" class="form-control form-control-sm text-end" value="1" min="1" onchange="calculMo(1)">
          </td>
