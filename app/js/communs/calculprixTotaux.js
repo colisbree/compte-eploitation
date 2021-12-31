@@ -2,6 +2,7 @@
 calculTotalItem(i, "pRevientHT", "pTotauxFournisseurs");
 calculTotalItem(be, "pTotalHTBeton", "pTotalBeton");
 calculTotalItem(mo, "pTotalHTMo", "pTotalMo");
+calculTotalItem(st, "pTotalHTSt", "pTotalSt");
 
 // calcul avant soumission du formulaire
 function calculTotalItem(i, nomItem, nomTotal) {

@@ -1,7 +1,14 @@
-let st = 1;
+if (formSoumis === 1) {
+   for (let n = 1; n <= st; n++) {
+      calculSt(n, 1);
+   }
+   if (st > 1) {
+      document.getElementById('btnStMinus').disabled = false;
+   }
+}
 
 
-function calculSt(j) {
+function calculSt(j, soumis = 0) {
    let nbPers = parseFloat(document.getElementById("formulaire").elements["nbPersSt" + j].value);
    let nbHeure = parseFloat(document.getElementById("formulaire").elements["nbHeureSt" + j].value);
    let prixUnitaireHTSt = parseFloat(document.getElementById("formulaire").elements["prixUnitaireHTSt" + j].value);
@@ -17,7 +24,9 @@ function calculSt(j) {
       alert("Erreur de saisie. Veuillez recommencer.");
 
    }
-   calculTotalItem(st, "pTotalHTSt", "pTotalSt");
+   if (soumis === 0) {
+      calculTotalItem(st, "pTotalHTSt", "pTotalSt");
+   }
 }
 
 // function calculTotalSt() {
