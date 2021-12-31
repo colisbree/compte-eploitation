@@ -1,3 +1,11 @@
+<?php
+//récupération du nombre lignes si soumission du formulaire
+$nbLignesItem = isset($nbLignes) ? $nbLignes[3] : 1;
+echo "<script type='text/javascript'>";
+echo "let mo= $nbLignesItem;";
+echo "</script>";
+?>
+
 <table class="table table-hover table-sm caption-top">
    <caption class="bg-light-blue">MAIN D'OEUVRE</caption>
    <thead>
@@ -12,29 +20,35 @@
       </tr>
    </thead>
    <tbody>
-      <tr id="formMo1">
-         <th scope="row" id="ligneMo1" class="align-middle">1</th>
-         <input type="hidden" name="ligneMo1" value="ligne">
+      <?php
+		for($n=1; $n <= $nbLignesItem; $n++) : 
+		?>
+      <tr id="formMo<?= $n ?>">
+         <th scope="row" id="ligneMo<?= $n ?>" class="align-middle"><?= $n ?></th>
+         <input type="hidden" name="ligneMo<?= $n ?>" value="ligne">
          <td>
-            <input type="number" name="nbPers1" class="form-control form-control-sm text-end" value="1" min="1" onchange="calculMo(1)">
+            <input type="number" name="nbPers<?= $n ?>" value="<?= isset($datas) ? $datas['nbPers'.$n] : 1 ?>" min="1" onchange="calculMo(<?= $n ?>)" class="form-control form-control-sm text-end" >
          </td>
          <td>
-            <input type="text" name="nbHeure1" value="" onchange="calculMo(1)" class="form-control form-control-sm text-end">
+            <input type="text" name="nbHeure<?= $n ?>" value="<?= isset($datas) ? $datas['nbHeure'.$n] : "" ?>" onchange="calculMo(<?= $n ?>)" class="form-control form-control-sm text-end">
          </td>
          <td>
-            <input type="text" name="natureMo1" value="" class="form-control form-control-sm">
+            <input type="text" name="natureMo<?= $n ?>" value="<?= isset($datas) ? $datas['natureMo'.$n] : "" ?>" class="form-control form-control-sm">
          </td>
          <td>
-            <input type="text" name="posteMo1" value="" class="form-control form-control-sm">
+            <input type="text" name="posteMo<?= $n ?>" value="<?= isset($datas) ? $datas['posteMo'.$n] : "" ?>" class="form-control form-control-sm">
          </td>
          <td>
-            <input type="text" name="prixUnitaireHTMo1" value="25" onchange="calculMo(1)" class="form-control form-control-sm text-end">
+            <input type="text" name="prixUnitaireHTMo<?= $n ?>" value="<?= isset($datas) ? $datas['prixUnitaireHTMo'.$n] : 25 ?>" onchange="calculMo(<?= $n ?>)" class="form-control form-control-sm text-end">
          </td>
          <td>
-            <input type="text" name="pTotalHTMo1" value="" class="form-control form-control-sm text-end fw-bold" disabled readonly>
+            <input type="text" name="pTotalHTMo<?= $n ?>" value="" class="form-control form-control-sm text-end fw-bold" disabled readonly>
          </td>
       </tr>
-      <tr id="formMo2"></tr>
+      <?php
+      endfor ;
+      ?>
+      <tr id="formMo<?= $n ?>"></tr>
    </tbody>
 </table>
 

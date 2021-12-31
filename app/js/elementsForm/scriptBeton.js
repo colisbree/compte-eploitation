@@ -1,9 +1,9 @@
 if (formSoumis === 1) {
-   for (let n = 1; n <= i; n++) {
+   for (let n = 1; n <= be; n++) {
       calculBeton(n, 1);
    }
-   if (i > 1) {
-      document.getElementById('btnFournisseurMinus').disabled = false;
+   if (be > 1) {
+      document.getElementById('btnBetonMinus').disabled = false;
    }
 }
 

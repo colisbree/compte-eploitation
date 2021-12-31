@@ -1,7 +1,14 @@
-let mo = 1;
+if (formSoumis === 1) {
+   for (let n = 1; n <= mo; n++) {
+      calculMo(n, 1);
+   }
+   if (mo > 1) {
+      document.getElementById('btnMoMinus').disabled = false;
+   }
+}
 
 
-function calculMo(j) {
+function calculMo(j, soumis = 0) {
    let nbPers = parseFloat(document.getElementById("formulaire").elements["nbPers" + j].value);
    let nbHeure = parseFloat(document.getElementById("formulaire").elements["nbHeure" + j].value);
    let prixUnitaireHTMo = parseFloat(document.getElementById("formulaire").elements["prixUnitaireHTMo" + j].value);
@@ -17,7 +24,9 @@ function calculMo(j) {
       alert("Erreur de saisie. Veuillez recommencer.");
 
    }
-   calculTotalItem(mo, "pTotalHTMo", "pTotalMo");
+   if (soumis === 0) {
+      calculTotalItem(mo, "pTotalHTMo", "pTotalMo");
+   }
 }
 
 // function calculTotalMo() {
