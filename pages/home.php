@@ -30,6 +30,13 @@ if (!empty($_POST)){
    // var_dump($nbLignes);
    // echo '</pre>';
 }
+
+
+$formSoumis = isset($formSoumis) ? $formSoumis : 0;
+echo "<script type='text/javascript'>";
+echo "let formSoumis = $formSoumis;";
+echo "</script>";
+
 ?>
 
 <div class="col-lg-10 mx-auto">

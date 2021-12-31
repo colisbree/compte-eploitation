@@ -1,13 +1,9 @@
 <?php
 //récupération du nombre lignes si soumission du formulaire
 $nbLignesItem = isset($nbLignes) ? $nbLignes[1] : 1;
-$formSoumis = isset($formSoumis) ? $formSoumis : 0;
-
 echo "<script type='text/javascript'>";
 echo "let i= $nbLignesItem;";
-echo "let formSoumis = $formSoumis;";
 echo "</script>";
-
 ?>
 
 <table class="table table-hover table-sm caption-top">

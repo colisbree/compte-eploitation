@@ -1,5 +1,6 @@
 // calcul post soumission du formulaire
 calculTotalItem(i, "pRevientHT", "pTotauxFournisseurs");
+calculTotalItem(be, "pTotalHTBeton", "pTotalBeton");
 
 // calcul avant soumission du formulaire
 function calculTotalItem(i, nomItem, nomTotal) {

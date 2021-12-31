@@ -1,7 +1,13 @@
-let be = 1;
+if (formSoumis === 1) {
+   for (let n = 1; n <= i; n++) {
+      calculBeton(n, 1);
+   }
+   if (i > 1) {
+      document.getElementById('btnFournisseurMinus').disabled = false;
+   }
+}
 
-
-function calculBeton(j) {
+function calculBeton(j, soumis = 0) {
    let quantite = parseFloat(document.getElementById("formulaire").elements["volume" + j].value);
    let prixUnitaireHTBeton = parseFloat(document.getElementById("formulaire").elements["prixUnitaireHTBeton" + j].value);
    let pTotalHTBeton = parseFloat(document.getElementById("formulaire").elements["pTotalHTBeton" + j].value);
@@ -16,7 +22,9 @@ function calculBeton(j) {
       alert("Erreur de saisie. Veuillez recommencer.");
 
    }
-   calculTotalItem(be, "pTotalHTBeton", "pTotalBeton");
+   if (soumis === 0) {
+      calculTotalItem(be, "pTotalHTBeton", "pTotalBeton");
+   }
 }
 
 // function calculTotalBeton() {
