@@ -54,11 +54,11 @@ function addLineBeton() {
    let addCode = `<tr id="formBeton` + be + `">
             <th scope="row" id="LigneBeton` + be + `" class="align-middle">` + be + `</th>
             <td>
-               <input type="text" name="volume` + be + `" class="form-control form-control-sm text-end" value="" min="0"
-                  pattern="[0-9]" onchange="calculBeton(` + be + `)" >
+               <input type="text" name="volume` + be + `" class="form-control form-control-sm text-end" value=""
+                  onchange="calculBeton(` + be + `)" >
             </td>
             <td>
-               <input type="text" name="centrale` + be + `" class="form-control form-control-sm text-end" value="" min="0">
+               <input type="text" name="centrale` + be + `" class="form-control form-control-sm text-end" value="">
             </td>
             <td>
                <input type="text" name="natureBeton` + be + `" class="form-control form-control-sm" value="">

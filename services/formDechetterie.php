@@ -16,26 +16,22 @@
                <tr id="formEvac1">
                   <th scope="row" id="LigneEvac1" class="align-middle">1</th>
                   <td>
-                     <input type="text" name="volumeEvac1" class="form-control form-control-sm text-end" value=""
-                        min="0" onchange="calculEvac(1)" >
+                     <input type="text" name="volumeEvac1" value="" min="0" onchange="calculEvac(1)" class="form-control form-control-sm text-end" >
                   </td>
                   <td>
-                     <input type="text" name="prixUnitaireHTEvac1" class="form-control form-control-sm text-end"
-                        value="3.50" min="0" onchange="calculEvac(1)" >
+                     <input type="text" name="prixUnitaireHTEvac1" value="3.50" min="0" onchange="calculEvac(1)" class="form-control form-control-sm text-end">
                   </td>
                   <td>
-                     <input type="text" name="natureEvac1" class="form-control form-control-sm" value="">
+                     <input type="text" name="natureEvac1" value="" class="form-control form-control-sm">
                   </td>
                   <td>
-                     <input type="text" name="posteEvac1" class="form-control form-control-sm" value="">
+                     <input type="text" name="posteEvac1" value="" class="form-control form-control-sm">
                   </td>
                   <td>
-                     <input type="text" name="locationEvac1" class="form-control form-control-sm text-end" value="0"
-                        onchange="calculEvac(1)" >
+                     <input type="text" name="locationEvac1" value="0" onchange="calculEvac(1)" class="form-control form-control-sm text-end">
                   </td>
                   <td>
-                     <input type="text" name="pTotalHTEvac1" class="form-control form-control-sm text-end fw-bold"
-                        value="" disabled readonly>
+                     <input type="text" name="pTotalHTEvac1" value="" class="form-control form-control-sm text-end fw-bold" disabled readonly>
                   </td>
                </tr>
                <tr id="formEvac2"></tr>

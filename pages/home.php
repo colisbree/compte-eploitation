@@ -1,4 +1,6 @@
+<?php
 
+?>
 
 <div class="col-lg-10 mx-auto">
    <form id="formulaire" method="post" action="">

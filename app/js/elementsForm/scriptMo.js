@@ -56,7 +56,7 @@ function addLineMo() {
             <th scope="row" id="ligneMo` + mo + `" class="align-middle">` + mo + `</th>
             <td>
                <input type="number" name="nbPers` + mo + `" class="form-control form-control-sm text-end" value="1" min="1"
-                  pattern="[0-9.,]" onchange="calculMo(` + mo + `)" >
+                onchange="calculMo(` + mo + `)" >
             </td>
             <td>
                <input type="text" name="nbHeure` + mo + `" class="form-control form-control-sm text-end" value=""

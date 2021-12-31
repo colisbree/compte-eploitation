@@ -19,25 +19,22 @@
             <input type="text" name="sStraitantSt1" class="form-control form-control-sm" value="">
          </td>
          <td>
-            <input type="number" name="nbPersSt1" class="form-control form-control-sm text-end" value="1" min="1"
-               pattern="[0-9.,]" onchange="calculSt(1)" >
+            <input type="number" name="nbPersSt1" value="1" min="1" onchange="calculSt(1)"class="form-control form-control-sm text-end">
          </td>
          <td>
-            <input type="text" name="nbHeureSt1" class="form-control form-control-sm text-end" value=""
-               onchange="calculSt(1)" >
+            <input type="text" name="nbHeureSt1" value="" onchange="calculSt(1)"class="form-control form-control-sm text-end">
          </td>
          <td>
-            <input type="text" name="natureSt1" class="form-control form-control-sm" value="">
+            <input type="text" name="natureSt1" value="" class="form-control form-control-sm" >
          </td>
          <td>
-            <input type="text" name="posteSt1" class="form-control form-control-sm" value="">
+            <input type="text" name="posteSt1" value="" class="form-control form-control-sm" >
          </td>
          <td>
-            <input type="text" name="prixUnitaireHTSt1" class="form-control form-control-sm text-end" value="25"
-               onchange="calculSt(1)" >
+            <input type="text" name="prixUnitaireHTSt1" value="25" onchange="calculSt(1)" class="form-control form-control-sm text-end">
          </td>
          <td>
-            <input type="text" name="pTotalHTSt1" class="form-control form-control-sm text-end fw-bold" value=""
+            <input type="text" name="pTotalHTSt1" value="" class="form-control form-control-sm text-end fw-bold" 
                disabled readonly>
          </td>
       </tr>

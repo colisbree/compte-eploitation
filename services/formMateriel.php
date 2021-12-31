@@ -31,22 +31,19 @@
                      </datalist>
                   </td>
                   <td>
-                     <input type="text" name="nbHeuresEngin1" class="form-control form-control-sm text-end" value=""
-                        min="0" onchange="calculEngin(1)" >
+                     <input type="text" name="nbHeuresEngin1" value="" min="0" onchange="calculEngin(1)" class="form-control form-control-sm text-end" >
                   </td>
                   <td>
-                     <input type="text" name="prixUnitaireHTEngin1" class="form-control form-control-sm text-end"
-                        value="" min="0" onchange="calculEngin(1)" >
+                     <input type="text" name="prixUnitaireHTEngin1" value="" min="0" onchange="calculEngin(1)" class="form-control form-control-sm text-end">
                   </td>
                   <td>
-                     <input type="text" name="commentaireEngin1" class="form-control form-control-sm" value="">
+                     <input type="text" name="commentaireEngin1" value=""  class="form-control form-control-sm">
                   </td>
                   <td>
-                     <input type="text" name="posteEngin1" class="form-control form-control-sm" value="">
+                     <input type="text" name="posteEngin1" value="" class="form-control form-control-sm">
                   </td>
                   <td>
-                     <input type="text" name="pTotalHTEngin1" class="form-control form-control-sm text-end fw-bold"
-                        value="" disabled readonly>
+                     <input type="text" name="pTotalHTEngin1" value="" class="form-control form-control-sm text-end fw-bold" disabled readonly>
                   </td>
                </tr>
                <tr id="formEngin2"></tr>

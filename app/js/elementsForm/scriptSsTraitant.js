@@ -59,7 +59,7 @@ function addLineSt() {
             </td>
             <td>
                <input type="number" name="nbPersSt` + st + `" class="form-control form-control-sm text-end" value="1"
-                  min="1" pattern="[0-9.,]" onchange="calculSt(` + st + `)" >
+                  min="1"  onchange="calculSt(` + st + `)" >
             </td>
             <td>
                <input type="text" name="nbHeureSt` + st + `" class="form-control form-control-sm text-end" value=""

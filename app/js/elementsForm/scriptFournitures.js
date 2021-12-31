@@ -61,7 +61,7 @@ function addLineFournisseur() {
                </td>
             <td>
                <input type="text" name="quantite`+ i + `" class="form-control form-control-sm text-end" value="" min="0"
-                  pattern="[0-9]" onchange="calculPrix(`+ i + `)" >
+                   onchange="calculPrix(`+ i + `)" >
             </td>
             <td>
                <input type="text" list="liste-ref" id="list_ref`+ i + `" name="reference1"

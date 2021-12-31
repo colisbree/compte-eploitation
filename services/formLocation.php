@@ -16,24 +16,22 @@
                <tr id="formLocation1">
                   <th scope="row" id="LigneLocation1" class="align-middle">1</th>
                   <td>
-                     <input type="text" name="loueurLocation1" class="form-control form-control-sm text-end" value="">
+                     <input type="text" name="loueurLocation1" value=""  class="form-control form-control-sm text-end">
                   </td>
                   <td>
-                     <input type="text" name="typeLocation1" class="form-control form-control-sm text-end" value="">
+                     <input type="text" name="typeLocation1" value="" class="form-control form-control-sm text-end">
                   </td>
                   <td>
-                     <input type="text" name="prixUnitaireHTLocation1" class="form-control form-control-sm text-end"
-                        value="" min="0" onchange="calculLocation(1)" >
+                     <input type="text" name="prixUnitaireHTLocation1" value="" min="0" onchange="calculLocation(1)" class="form-control form-control-sm text-end">
                   </td>
                   <td>
-                     <input type="text" name="commentaireLocation1" class="form-control form-control-sm" value="">
+                     <input type="text" name="commentaireLocation1" value=""  class="form-control form-control-sm">
                   </td>
                   <td>
-                     <input type="text" name="posteLocation1" class="form-control form-control-sm" value="">
+                     <input type="text" name="posteLocation1" value="" class="form-control form-control-sm">
                   </td>
                   <td>
-                     <input type="text" name="pTotalHTLocation1" class="form-control form-control-sm text-end fw-bold"
-                        value="" disabled readonly>
+                     <input type="text" name="pTotalHTLocation1" value="" class="form-control form-control-sm text-end fw-bold" disabled readonly>
                   </td>
                </tr>
                <tr id="formLocation2"></tr>

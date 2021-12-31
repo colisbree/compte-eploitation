@@ -16,25 +16,22 @@
 					<tr id="formBeton1">
 						<th scope="row" id="LigneBeton1" class="align-middle">1</th>
 						<td>
-							<input type="text" name="volume1" class="form-control form-control-sm text-end" value="" min="0"
-								pattern="[0-9]" onchange="calculBeton(1)" >
+							<input type="text" name="volume1" value="" onchange="calculBeton(1)" class="form-control form-control-sm text-end" >
 						</td>
 						<td>
-							<input type="text" name="centrale1" class="form-control form-control-sm text-end" value="" min="0">
+							<input type="text" name="centrale1" value="" class="form-control form-control-sm text-end">
 						</td>
 						<td>
-							<input type="text" name="natureBeton1" class="form-control form-control-sm" value="">
+							<input type="text" name="natureBeton1" value="" class="form-control form-control-sm">
 						</td>
 						<td>
-							<input type="text" name="posteBeton1" class="form-control form-control-sm" value="">
+							<input type="text" name="posteBeton1" value="" class="form-control form-control-sm">
 						</td>
 						<td>
-							<input type="text" name="prixUnitaireHTBeton1" class="form-control form-control-sm text-end"
-								value="120" onchange="calculBeton(1)" >
+							<input type="text" name="prixUnitaireHTBeton1" value="120" onchange="calculBeton(1)" class="form-control form-control-sm text-end">
 						</td>
 						<td>
-							<input type="text" name="pTotalHTBeton1" class="form-control form-control-sm text-end fw-bold"
-								value="" disabled readonly>
+							<input type="text" name="pTotalHTBeton1" value="" class="form-control form-control-sm text-end fw-bold" disabled readonly>
 						</td>
 					</tr>
 					<tr id="formBeton2"></tr>

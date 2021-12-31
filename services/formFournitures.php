@@ -17,15 +17,14 @@
 		<tr id="formFournisseur1">
 			<th scope="row" id="ligneFrs1" class="align-middle">1</th>
 			<td>
-				<input type="text" name="fournisseur1" class="form-control form-control-sm text-end" value="" >
+				<input type="text" name="fournisseur1" value="" class="form-control form-control-sm text-end">
 			</td>
 			<td>
-				<input type="text" name="quantite1" class="form-control form-control-sm text-end" value="" min="0"
-					pattern="[0-9]" onchange="calculPrix(1)" >
+				<input type="text" name="quantite1" value="" onchange="calculPrix(1)" class="form-control form-control-sm text-end">
 			</td>
 			<td>
 				<input type="text" list="liste-ref" id="list_ref1" name="reference1"
-					class="form-control form-control-sm text-end" value="" onchange="selectRef(1)" >
+					class="form-control form-control-sm text-end" value="" onchange="selectRef(1)">
 				<datalist id="liste-ref">
 					<option data-value='AEDM|52' value='Copeaux de bois Eco Copeo Naturel'>
 					<option data-value='AEDM|25' value='Terre végétale amendée '>
@@ -44,21 +43,19 @@
 				</datalist>
 			</td>
 			<td>
-				<input type="text" name="poste1" class="form-control form-control-sm" value="">
+				<input type="text" name="poste1" value="" class="form-control form-control-sm">
 			</td>
 			<td>
-				<input type="text" name="prixUnitaireHT1" class="form-control form-control-sm text-end" value="0"  onchange="calculPrix(1)" >
+				<input type="text" name="prixUnitaireHT1" value="0"  onchange="calculPrix(1)" class="form-control form-control-sm text-end">
 			</td>
 			<td>
-				<input type="text" name="pTotalHT1" class="form-control form-control-sm text-end" value="" disabled
-					readonly>
+				<input type="text" name="pTotalHT1" value="" class="form-control form-control-sm text-end"  disabled readonly>
 			</td>
 			<td>
-				<input type="text" name="pTransportHT1" class="form-control form-control-sm text-end" value="0"  onchange="calculPrix(1)" >
+				<input type="text" name="pTransportHT1" value="0" onchange="calculPrix(1)" class="form-control form-control-sm text-end">
 			</td>
 			<td>
-				<input type="text" name="pRevientHT1" class="form-control form-control-sm text-end fw-bold" value=""
-					disabled readonly>
+				<input type="text" name="pRevientHT1" value="" class="form-control form-control-sm text-end fw-bold" disabled readonly>
 			</td>
 		</tr>
 		<tr id="formFournisseur2"></tr>
