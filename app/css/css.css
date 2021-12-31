@@ -1,0 +1,71 @@
+input:invalid:after {
+   border: 2px dashed red;
+ }
+ 
+ input:valid:after {
+   border: 1px solid black;
+ }
+
+ input[type="text"]:disabled {
+
+   color: black;
+
+}
+
+label.form-label {
+   font-size:0.8em;
+}
+
+th {
+   font-size:0.8em;
+}
+
+.bg-purple{
+   background-color:purple;
+   color: white;
+   padding:0.5rem;
+   font-weight:bold;
+}
+
+.bg-marron {
+   background-color:#974706;
+   color: white;
+   padding:0.5rem;
+   font-weight:bold;
+}
+
+.bg-light-blue {
+   background-color:#1157a7;
+   color: white;
+   padding:0.5rem;
+   font-weight:bold;
+}
+
+.bg-light-yellow {
+   background-color: #ffe389;;
+   padding:0.5rem;
+   font-weight:bold;
+}
+
+.bg-grey {
+   background-color: grey;
+   color: white;
+   padding:0.5rem;
+   font-weight:bold;
+}
+
+.bg-olive {
+   background-color: #647d33;
+   color: white;
+   padding:0.5rem;
+   font-weight:bold;
+}
+
+.bg-light-marron {
+   background-color: #A17131;
+   color: white;
+   padding:0.5rem;
+   font-weight:bold;
+}
+
+
