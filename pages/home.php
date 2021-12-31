@@ -1,9 +1,13 @@
 
 
 <div class="col-lg-10 mx-auto">
-   <form id="formulaire" method="post" action="<? ?>">
+   <form id="formulaire" method="post" action="">
 
       <?php
+      // ajout En-Tête
+      require_once('./services/formEntete.php');
+      echo '<br/>';
+
       // ajout des fournitures
       require_once('./services/formFournitures.php');
       echo '<script src="../app/js/elementsForm/scriptFournitures.js"></script>';
