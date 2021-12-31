@@ -1,5 +1,17 @@
 <?php
-
+// récupération de la soumission du formulaire
+if (isset($_POST)){
+   
+   foreach($_POST as $key => $value)
+   {
+      $key = htmlentities(stripslashes(trim($key)));
+      $value = htmlentities(stripslashes(trim($value)));
+      $datas[$key] = $value;
+   }
+   // echo '<pre>';
+   // var_dump($datas);
+   // echo '</pre>';
+}
 ?>
 
 <div class="col-lg-10 mx-auto">

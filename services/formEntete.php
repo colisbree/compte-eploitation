@@ -3,7 +3,7 @@
       <label for="Client"><strong>Client</strong></label>
    </div>
    <div class="col-md-4">
-      <input type="text" class="form-control" name="Client" value="" placeholder="Nom du Client">
+      <input type="text" class="form-control" name="Client" value="<?= isset($datas) ? $datas['Client'] : "" ?>" placeholder="Nom du Client">
    </div>
    <div class="col-md-2">
    </div>
@@ -11,7 +11,7 @@
       <label for="Devis"><strong>Devis</strong></label>
    </div>
    <div class="col-md-4">
-      <input type="text" class="form-control" name="Devis" placeholder="Numéro du Devis">
+      <input type="text" class="form-control" name="Devis" value="<?= isset($datas) ? $datas['Devis'] : "" ?>" placeholder="Numéro du Devis">
    </div>
 </div>
 <div class="row form-group mb-2 d-flex align-items-center">
@@ -19,7 +19,7 @@
       <label for="Projet"><strong>Projet</strong></label>
    </div>
    <div class="col-md-11">
-      <input type="text" class="form-control" name="Projet" value="" placeholder="Description du Projet">
+      <input type="text" class="form-control" name="Projet" value="<?= isset($datas) ? $datas['Projet'] : "" ?>" placeholder="Description du Projet">
    </div>
 </div>
 

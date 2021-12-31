@@ -64,7 +64,7 @@ function addLineFournisseur() {
                    onchange="calculPrix(`+ i + `)" >
             </td>
             <td>
-               <input type="text" list="liste-ref" id="list_ref`+ i + `" name="reference1"
+               <input type="text" list="liste-ref" id="list_ref`+ i + `" name="reference` + i + `"
                   class="form-control form-control-sm text-end" value="" onchange="selectRef(`+ i + `)" >
                <datalist id="liste-ref">
 
