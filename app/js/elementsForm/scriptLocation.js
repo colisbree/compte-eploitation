@@ -1,7 +1,14 @@
-let loc = 1;
+if (formSoumis === 1) {
+   for (let n = 1; n <= loc; n++) {
+      calculLocation(n, 1);
+   }
+   if (loc > 1) {
+      document.getElementById('btnLocationMinus').disabled = false;
+   }
+}
 
 
-function calculLocation(j) {
+function calculLocation(j, soumis = 0) {
    let prixUnitaireHTLocation = parseFloat(document.getElementById("formulaire").elements["prixUnitaireHTLocation" + j].value);
    let pTotalHTLocation = parseFloat(document.getElementById("formulaire").elements["pTotalHTLocation" + j].value);
    //let pTotauxLocations = document.getElementById("pTotauxLocations");
@@ -12,10 +19,12 @@ function calculLocation(j) {
       document.getElementById('btnLocationPlus').disabled = false;
    } else {
       document.getElementById("formulaire").elements["pTotalHTLocation" + j].value = "0.00 €";
-      alert("Erreur de saisie. Veuillez recommencer.");
+      //alert("Erreur de saisie. Veuillez recommencer.");
 
    }
-   calculTotalItem(loc, "pTotalHTLocation", "pTotalLocation");
+   if (soumis === 0) {
+      calculTotalItem(loc, "pTotalHTLocation", "pTotalLocation");
+   }
 }
 
 // function calculTotalLocation() {

@@ -3,6 +3,9 @@ calculTotalItem(i, "pRevientHT", "pTotauxFournisseurs");
 calculTotalItem(be, "pTotalHTBeton", "pTotalBeton");
 calculTotalItem(mo, "pTotalHTMo", "pTotalMo");
 calculTotalItem(st, "pTotalHTSt", "pTotalSt");
+calculTotalItem(edd, "pTotalHTEvac", "pTotalEvac");
+calculTotalItem(eem, "pTotalHTEngin", "pTotalEngin");
+calculTotalItem(loc, "pTotalHTLocation", "pTotalLocation");
 
 // calcul avant soumission du formulaire
 function calculTotalItem(i, nomItem, nomTotal) {

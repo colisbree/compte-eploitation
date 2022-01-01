@@ -24,7 +24,7 @@ function calculPrix(j, soumis = 0) {
    } else {
       document.getElementById("formulaire").elements["pTotalHT" + j].value = 0.00;
       document.getElementById("formulaire").elements["pRevientHT" + j].value = "0.00 €";
-      alert("Erreur de saisie. Veuillez recommencer.");
+      //alert("Erreur de saisie. Veuillez recommencer.");
 
    }
    if (soumis === 0) {

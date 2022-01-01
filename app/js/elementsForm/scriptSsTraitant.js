@@ -21,7 +21,7 @@ function calculSt(j, soumis = 0) {
       document.getElementById('btnStPlus').disabled = false;
    } else {
       document.getElementById("formulaire").elements["pTotalHTSt" + j].value = "0.00 €";
-      alert("Erreur de saisie. Veuillez recommencer.");
+      //alert("Erreur de saisie. Veuillez recommencer.");
 
    }
    if (soumis === 0) {

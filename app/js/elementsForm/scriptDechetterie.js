@@ -1,7 +1,14 @@
-let edd = 1;
+if (formSoumis === 1) {
+   for (let n = 1; n <= edd; n++) {
+      calculEvac(n, 1);
+   }
+   if (edd > 1) {
+      document.getElementById('btnEvacMinus').disabled = false;
+   }
+}
 
 
-function calculEvac(j) {
+function calculEvac(j, soumis = 0) {
    let quantite = parseFloat(document.getElementById("formulaire").elements["volumeEvac" + j].value);
    let location = parseFloat(document.getElementById("formulaire").elements["locationEvac" + j].value);
    let prixUnitaireHTEvac = parseFloat(document.getElementById("formulaire").elements["prixUnitaireHTEvac" + j].value);
@@ -14,10 +21,12 @@ function calculEvac(j) {
       document.getElementById('btnEvacPlus').disabled = false;
    } else {
       document.getElementById("formulaire").elements["pTotalHTEvac" + j].value = "0.00 €";
-      alert("Erreur de saisie. Veuillez recommencer.");
+      //alert("Erreur de saisie. Veuillez recommencer.");
 
    }
-   calculTotalItem(edd, "pTotalHTEvac", "pTotalEvac");
+   if (soumis === 0) {
+      calculTotalItem(edd, "pTotalHTEvac", "pTotalEvac");
+   }
 }
 
 // function calculTotalEvac() {

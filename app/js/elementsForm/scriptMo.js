@@ -21,7 +21,7 @@ function calculMo(j, soumis = 0) {
       document.getElementById('btnMoPlus').disabled = false;
    } else {
       document.getElementById("formulaire").elements["pTotalHTMo" + j].value = "0.00 €";
-      alert("Erreur de saisie. Veuillez recommencer.");
+      //alert("Erreur de saisie. Veuillez recommencer.");
 
    }
    if (soumis === 0) {

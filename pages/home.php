@@ -26,6 +26,8 @@ if (!empty($_POST)){
       $nomCategorie2 = $nomCategorie1;
       $nbLignes[$numCategorie]=$lignes;
    }
+   // réinitialisation du numéro de la catégorie
+   $numCategorie = 0;
    // echo '<pre>';
    // var_dump($nbLignes);
    // echo '</pre>';

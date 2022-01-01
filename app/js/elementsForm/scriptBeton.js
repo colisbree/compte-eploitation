@@ -19,7 +19,7 @@ function calculBeton(j, soumis = 0) {
       document.getElementById('btnBetonPlus').disabled = false;
    } else {
       document.getElementById("formulaire").elements["pTotalHTBeton" + j].value = "0.00 €";
-      alert("Erreur de saisie. Veuillez recommencer.");
+      //alert("Erreur de saisie. Veuillez recommencer.");
 
    }
    if (soumis === 0) {

@@ -1,6 +1,6 @@
 <?php
 //récupération du nombre lignes si soumission du formulaire
-$nbLignesItem = isset($nbLignes) ? $nbLignes[4] : 1;
+$nbLignesItem = isset($nbLignes) ? $nbLignes[++$numCategorie] : 1;
 echo "<script type='text/javascript'>";
 echo "let st= $nbLignesItem;";
 echo "</script>";

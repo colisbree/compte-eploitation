@@ -1,7 +1,14 @@
-let eem = 1;
+if (formSoumis === 1) {
+   for (let n = 1; n <= eem; n++) {
+      calculEngin(n, 1);
+   }
+   if (eem > 1) {
+      document.getElementById('btnEnginMinus').disabled = false;
+   }
+}
 
 
-function calculEngin(j) {
+function calculEngin(j, soumis = 0) {
    let nbHeures = parseFloat(document.getElementById("formulaire").elements["nbHeuresEngin" + j].value);
    let prixUnitaireHTEngin = parseFloat(document.getElementById("formulaire").elements["prixUnitaireHTEngin" + j].value);
    let pTotalHTEngin = parseFloat(document.getElementById("formulaire").elements["pTotalHTEngin" + j].value);
@@ -13,10 +20,12 @@ function calculEngin(j) {
       document.getElementById('btnEnginPlus').disabled = false;
    } else {
       document.getElementById("formulaire").elements["pTotalHTEngin" + j].value = "0.00 €";
-      alert("Erreur de saisie. Veuillez recommencer.");
+      //alert("Erreur de saisie. Veuillez recommencer.");
 
    }
-   calculTotalItem(eem, "pTotalHTEngin", "pTotalEngin");
+   if (soumis === 0) {
+      calculTotalItem(eem, "pTotalHTEngin", "pTotalEngin");
+   }
 }
 
 // function calculTotalEngin() {
